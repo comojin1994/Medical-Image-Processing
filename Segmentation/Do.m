@@ -1,4 +1,4 @@
-function output = Do()
+function Do()
   f = imread('../example.jpeg');
   f = f(:,:,1);
   
@@ -9,10 +9,10 @@ function output = Do()
   fseg5 = seg5(f,100,200,150,250,1,255);
   
   figure;
-  subplot(3,2,1);imshow(f);
-  subplot(3,2,2);imshow(fseg1);
-  subplot(3,2,3);imshow(fseg2);
-  subplot(3,2,4);imshow(fseg3);
-  subplot(3,2,5);imshow(fseg4);
-  subplot(3,2,6);imshow(fseg5);
+  subplot(2,3,1);imshow(f);
+  subplot(2,3,2);imshow(fseg1);
+  subplot(2,3,3);imshow(fseg2);
+  subplot(2,3,4);imshow(fseg3);
+  subplot(2,3,5);imshow(fseg4);
+  subplot(2,3,6);imshow(fseg5);
 end
